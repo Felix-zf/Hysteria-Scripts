@@ -553,8 +553,8 @@ menu() {
     clear
     echo "#############################################################"
     echo -e "#                  ${RED}Hysteria 2 一键安装脚本${PLAIN}                  #"
-    echo -e "# ${GREEN}作者${PLAIN}: Felix-zf                                            #"
-    echo -e "# ${GREEN}博客${PLAIN}: https://felix-zf.github.io/                         #"
+    echo -e "# ${GREEN}作者${PLAIN}: 秋名山吃豆腐                                        #"
+    echo -e "# ${GREEN}博客${PLAIN}: https://felix-zf.github.io                          #"
     echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/Felix-zf                  #"
     echo -e "# ${GREEN}GitLab 项目${PLAIN}: https://gitlab.com/Felix-zf/V2ray-install    #"
     echo -e "# ${GREEN}Telegram 频道${PLAIN}: https://t.me/@Felix_7200GT                 #"
