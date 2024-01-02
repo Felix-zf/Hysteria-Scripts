@@ -2,15 +2,15 @@
 V2ray-install test
 
 ## 服务端部署步骤  
-- SSH 进入 VPS，输入以下命令
-Hysteria 2
+- Hysteria 2
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/V2ray-install/main/hy2/hysteria.sh && bash hysteria.sh
 ```
-Hysteria 1
+- Hysteria 1
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/V2ray-install/main/hy1/hysteria.sh && bash hysteria.sh
 ```
+
 - 下载服务端文件: sz+相应文件路径
 
 ## 客户端配置
