@@ -6,9 +6,7 @@ V2ray-install test
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/V2ray-install/main/hy2/hysteria.sh && bash hysteria.sh
 ```
-
-- 下载服务端文件
-sz+相应文件路径
+- 下载服务端文件: sz+相应文件路径
 
 ## 客户端配置
 - 首先在此：https://github.com/apernet/hysteria/releases/ 下载客户端,解压至v2rayN的bin/hysteria目录中.
