@@ -556,7 +556,7 @@ menu() {
     echo -e "# ${GREEN}作者${PLAIN}: 秋名山吃豆腐                                        #"
     echo -e "# ${GREEN}博客${PLAIN}: https://felix-zf.github.io                          #"
     echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/Felix-zf                  #"
-    echo -e "# ${GREEN}GitLab 项目${PLAIN}: https://gitlab.com/Felix-zf/V2ray-install    #"
+    echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://gitlab.com/Felix-zf/V2ray-install    #"
     echo -e "# ${GREEN}Telegram 频道${PLAIN}: https://t.me/@Felix_7200GT                 #"
     echo -e "# ${GREEN}YouTube 频道${PLAIN}: https://www.youtube.com/@Felix7200GT        #"
     echo "#############################################################"
