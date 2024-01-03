@@ -1,5 +1,5 @@
-# V2ray-install
-V2ray-install test
+# Heysteria-install
+Heysteria-install test
 
 ## 服务端部署步骤  
 - Hysteria 2
