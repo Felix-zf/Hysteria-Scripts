@@ -1,11 +1,20 @@
 # Heysteria-install
 Heysteria-install test
 
-## 服务端部署步骤  
+## 服务端部署步骤 
+- 更新 VPS 系统安装所需组件
+```
+apt update -y
+```
+```
+apt install curl sudo -y
+```
+
 - Hysteria 2
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-install/main/hy2/hysteria.sh && bash hysteria.sh
 ```
+
 - Hysteria 1
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-install/main/hy1/hysteria.sh && bash hysteria.sh
