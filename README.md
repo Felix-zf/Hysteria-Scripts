@@ -48,7 +48,7 @@ Tips:部分厂商VPS如搭建完Hysteria2无法正常启动，请执行如下命
 chmod +rw /root/private.key
 ```
 
-## Dibian系统命令放行端口
+## Debian系统命令放行端口
 - 安装iptables（通常系统都会自带，如果没有就需要安装）
 ```
 apt-get update
@@ -77,3 +77,4 @@ netfilter-persistent save
 netfilter-persistent reload
 ```
 设置完成后指定端口就会持续放行了
+
