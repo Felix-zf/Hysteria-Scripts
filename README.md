@@ -15,7 +15,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heyste
 
 ## 客户端配置
 - 首先在此：https://github.com/apernet/hysteria/releases/ 下载客户端,解压至v2rayN的bin/hysteria目录中.
-- 打开 v2rayN，依次点击“服务器”→“添加自定义服务器”,输入别名、导入脚本生成的文件，Core类型选择hysteria，Socks端口输入5080.
+- 打开 v2rayN，依次点击“服务器”→“添加自定义服务器”,输入别名、导入脚本生成的文件，Core类型选择hysteria，Socks端口输入xxxx.
 
 
 ## Hysteria2相关命令
@@ -42,6 +42,10 @@ systemctl stop hysteria-server.service
 #查看日志
 ```
 journalctl -u hysteria-server.service
+```
+#部分厂商VPS如搭建完Hysteria2无法正常启动，请执行如下命令添加私钥的读写权限，完成之后执行重启Hysteria2命令，再执行查看Hysteria2状态命令，如果启动成功即可！
+```
+chmod +rw /root/private.key
 ```
 
 ## Dibian系统命令放行端口
