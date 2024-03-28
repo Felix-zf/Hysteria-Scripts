@@ -62,8 +62,14 @@ iptables-save
 ```
 - 设置完就已经放行了指定的端口，但重启后会失效，下面设置持续生效规则；
 - 安装iptables-persistent
+```
 apt-get install iptables-persistent
+```
 - 保存规则持续生效
+```
 netfilter-persistent save
+```
+```
 netfilter-persistent reload
+```
 设置完成后指定端口就会持续放行了
