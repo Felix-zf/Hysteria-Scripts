@@ -46,12 +46,20 @@ journalctl -u hysteria-server.service
 
 ## Dibian系统命令放行端口
 - 安装iptables（通常系统都会自带，如果没有就需要安装）
+```
 apt-get update
+```
+```
 apt-get install iptables
+```
 - 例如要放行5080端口
+```
 iptables -I INPUT -p tcp --dport 5080 -j ACCEPT
+```
 - 然后保存放行规则
+```
 iptables-save
+```
 - 设置完就已经放行了指定的端口，但重启后会失效，下面设置持续生效规则；
 - 安装iptables-persistent
 apt-get install iptables-persistent
