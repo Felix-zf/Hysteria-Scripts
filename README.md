@@ -28,7 +28,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heyste
 - 打开 v2rayN，依次点击“服务器”→“添加自定义服务器”,输入别名、导入脚本生成的文件，Core类型选择hysteria，Socks端口输入xxxx.
 
 方法二  
-- 新建heysteria2，填入地址端口密码，开启跳过证书验证
+- 新建heysteria2服务器，填入地址端口密码，开启跳过证书验证
 
 
 ## Hysteria2相关命令
