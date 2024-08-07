@@ -25,7 +25,7 @@ yum install curl sudo -y
 ```
 bash <(curl -fsSL https://get.hy2.sh/)
 ```
-移除 Hysteria 2
+#移除 Hysteria 2
 ```
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
@@ -51,7 +51,53 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-S
 openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
 ```
 
+## 服务端配置文件
+```
+listen: :443
+ 
+# 以下 acme 和 tls 字段，二选一
+# 有域名部署的选择 acme ，无域名的选择 tls
+# 选择 acme，必须注释掉 tls，反之一样
+ 
+acme:
+  domains:
+    - cn2.bozai.us        # 域名
+  email: ityourself@email.com   # 邮箱，格式正确即可
+ 
+#tls:
+#  cert: /etc/hysteria/server.crt
+#  key: /etc/hysteria/server.key
+ 
+auth:
+  type: password
+  password: 88888888   # 请及时更改密码
+ 
+masquerade:
+  type: proxy
+  proxy:
+    url: https://bing.com # 伪装网站
+    rewriteHost: true
+```
+
 ## 客户端配置  
+```
+server: ip:443
+auth: ****
+ 
+#bandwidth:
+#  up: 20 mbps
+#  down: 100 mbps
+  
+tls:
+  sni: cn2.bozai.us  # 若无域名，请改为 bing.com
+  insecure: false    # 若无域名，需要改参数为 true
+ 
+socks5:
+  listen: 127.0.0.1:1080
+http:
+  listen: 127.0.0.1:8080
+```
+
 方法一
 - 首先在此：https://github.com/apernet/hysteria/releases/ 下载客户端,解压至v2rayN的bin/hysteria目录中.
 - 打开 v2rayN，依次点击“服务器”→“添加自定义服务器”,输入别名、导入脚本生成的文件，Core类型选择hysteria，Socks端口输入xxxx.
