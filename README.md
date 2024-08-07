@@ -4,6 +4,7 @@
 
 ## 服务端部署步骤 
 - 更新 VPS 系统安装所需组件
+
 #Debian命令
 ```
 apt update -y
