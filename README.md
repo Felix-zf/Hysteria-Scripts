@@ -170,4 +170,4 @@ netfilter-persistent reload
 
 ## 鸣谢
 - Misaka-blog的heysteria项目：https://github.com/Misaka-blog/hysteria-install  
-- 波仔分享油管up主的博文教学：https://v2rayssr.com/hysteria2.html
+- 油管up主波仔分享的博文教学：https://v2rayssr.com/hysteria2.html
