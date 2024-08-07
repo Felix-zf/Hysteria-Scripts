@@ -52,6 +52,7 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout 
 ```
 
 ## 服务端配置文件
+*服务端的配置要和客户端状态一致，也就是说，服务端配置的是无域名的配置，客户端也必须选择无域名的配置参数，必须一致，反之一样，服务端配置的是有域名的，那稍后客户端也必须选择有域名的参数*
 ```
 listen: :443
  
@@ -80,6 +81,7 @@ masquerade:
 ```
 
 ## 客户端配置  
+*请看清楚配置文件中的注释，修改 ip , auth（VPS 服务端 上面配置的密码） ， bandwidth ， sni ， insecure 等参数*
 ```
 server: ip:443
 auth: ****
