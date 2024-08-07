@@ -1,6 +1,7 @@
 # Heysteria-install
 
-**Project Core-Heysteria：https://github.com/apernet/hysteria**
+- Project Heysteria：https://github.com/apernet/hysteria
+- Offical Blog: https://v2.hysteria.network
 
 ## 服务端部署步骤 
 - 更新 VPS 系统安装所需组件
@@ -29,7 +30,6 @@ bash <(curl -fsSL https://get.hy2.sh/)
 ```
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
-*来源于官方博文教学：https://v2.hysteria.network*
 
 - Hysteria 2一键脚本
 ```
