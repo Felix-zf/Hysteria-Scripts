@@ -146,11 +146,11 @@ apt-get update
 ```
 apt-get install iptables
 ```
-- 例如要放行5080端口
+- 放行端口
 ```
-iptables -I INPUT -p tcp --dport 5080 -j ACCEPT
+iptables -I INPUT -p tcp --dport xxxx -j ACCEPT
 ```
-- 然后保存放行规则
+- 保存放行规则
 ```
 iptables-save
 ```
