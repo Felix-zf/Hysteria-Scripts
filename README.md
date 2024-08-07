@@ -30,13 +30,12 @@ bash <(curl -fsSL https://get.hy2.sh/)
 ```
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
-
-- Hysteria 2一键脚本
+- Hysteria 一键安装脚本
+#hysteria 2
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-Scripts/main/hy2/hysteria.sh && bash hysteria.sh
 ```
-
-- Hysteria 1一键脚本
+#hysteria 1
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-Scripts/main/hy1/hysteria.sh && bash hysteria.sh
 ```
