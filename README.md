@@ -4,19 +4,27 @@
 
 ## 服务端部署步骤 
 - 更新 VPS 系统安装所需组件
+#Debian命令
 ```
 apt update -y
 ```
 ```
 apt install curl sudo -y
 ```
+#CenOS命令
+```
+yum update -y
+```
+```             
+yum install curl sudo -y
+```
 
-- Hysteria 2
+- Hysteria 2一键脚本
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-Scripts/main/hy2/hysteria.sh && bash hysteria.sh
 ```
 
-- Hysteria 1
+- Hysteria 1一键脚本
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-Scripts/main/hy1/hysteria.sh && bash hysteria.sh
 ```
