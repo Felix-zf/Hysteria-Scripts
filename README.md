@@ -29,6 +29,8 @@ bash <(curl -fsSL https://get.hy2.sh/)
 ```
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
+*来源于官方博文教学：https://v2.hysteria.network*
+
 - Hysteria 2一键脚本
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-Scripts/main/hy2/hysteria.sh && bash hysteria.sh
