@@ -168,4 +168,4 @@ netfilter-persistent reload
 ```
 设置完成后指定端口就会持续放行了
 
-**鸣谢Misaka-blog：https://github.com/Misaka-blog/hysteria-install
+**鸣谢Misaka-blog：https://github.com/Misaka-blog/hysteria-install**
