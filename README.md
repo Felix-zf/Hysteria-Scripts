@@ -41,6 +41,16 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heyste
 
 - 下载服务端文件: sz+相应文件路径
 
+## 证书申请
+- 若有域名，acme.sh 证书一键生成
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
+```
+- 若无域名，生成自签证书
+```
+openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
+```
+
 ## 客户端配置  
 方法一
 - 首先在此：https://github.com/apernet/hysteria/releases/ 下载客户端,解压至v2rayN的bin/hysteria目录中.
