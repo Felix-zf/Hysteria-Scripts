@@ -113,9 +113,9 @@ http:
 ```
 systemctl start hysteria-server.service
 ```
-#查看Hysteria2状态
+#停止Hysteria2
 ```
-systemctl status hysteria-server.service
+systemctl stop hysteria-server.service
 ```
 #设置开机自启
 ```
@@ -125,9 +125,9 @@ systemctl enable hysteria-server.service
 ```
 systemctl restart hysteria-server.service
 ```
-#停止Hysteria2
+#查看Hysteria2状态(按q退出)
 ```
-systemctl stop hysteria-server.service
+systemctl status hysteria-server.service
 ```
 #查看日志
 ```
