@@ -19,7 +19,16 @@ yum update -y
 ```             
 yum install curl sudo -y
 ```
+- Hysteria 官方的一键安装脚本
 
+#安装或升级到最新版本 Hysteria 2
+```
+bash <(curl -fsSL https://get.hy2.sh/)
+```
+移除 Hysteria 2
+```
+bash <(curl -fsSL https://get.hy2.sh/) --remove
+```
 - Hysteria 2一键脚本
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-Scripts/main/hy2/hysteria.sh && bash hysteria.sh
