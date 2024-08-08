@@ -1,7 +1,7 @@
 # Heysteria-install
 
-- Project Heysteria：https://github.com/apernet/hysteria
 - Offical Blog: https://v2.hysteria.network
+- Project Heysteria：https://github.com/apernet/hysteria
 
 ## 服务端部署步骤 
 - 更新 VPS 系统安装所需组件
@@ -141,6 +141,12 @@ Tips:部分厂商VPS如搭建完Hysteria2无法正常启动，请执行如下命
 ```
 chmod +rw /root/private.key
 ```
+#Hysteria 2 的伪装验证
+进入 Chrome.exe 目标地址（路径），开启 Hysteria2 代理，Windows 打开 TUN 模式，cmd 命令如下：
+```
+chrome --origin-to-force-quic-on=你的域名:443
+```
+*访问 https://你的域名 ,若是按照上述搭建的话，会跳转到 bing.com 的网页*
 
 ## Debian系统命令放行端口
 - 安装iptables（通常系统都会自带，如果没有就需要安装）
