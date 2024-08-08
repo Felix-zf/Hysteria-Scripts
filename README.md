@@ -67,7 +67,7 @@ listen: :443
 acme:
   domains:
     - cn2.bozai.us        # 域名
-  email: ityourself@email.com   # 邮箱，格式正确即可
+  email: yourself@email.com   # 邮箱，格式正确即可
  
 #tls:
 #  cert: /etc/hysteria/server.crt
