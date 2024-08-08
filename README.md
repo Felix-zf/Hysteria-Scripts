@@ -146,7 +146,7 @@ chmod +rw /root/private.key
 ```
 #Hysteria 2 的伪装验证  
 
-进入 Chrome.exe 目标地址（路径），开启 Hysteria2 代理，Windows 打开 TUN 模式，cmd 命令如下：
+Windows 命令提示符进入 Chrome.exe 目标地址（cd+路径），开启 Hysteria2 代理，客户端打开 TUN 模式，cmd 命令如下：
 ```
 chrome --origin-to-force-quic-on=你的域名:443
 ```
