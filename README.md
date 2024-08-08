@@ -91,8 +91,8 @@ server: ip:443
 auth: ****
  
 #bandwidth:
-#  up: 20 mbps
-#  down: 100 mbps
+#  up: 30 mbps
+#  down: 90 mbps
   
 tls:
   sni: cn2.bozai.us  # 若无域名，请改为 bing.com
