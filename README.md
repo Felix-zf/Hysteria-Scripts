@@ -104,7 +104,7 @@ http:
   listen: 127.0.0.1:8080
 ```
 
-*tips:若是网络拥挤，丢包率高，我们在填入了 UP 和 DOWN 的数值带宽数值以后，Hysteria 会通过计算丢包率来提升速度进行补偿*
+*Tips: 若是网络拥挤，丢包率高，我们在填入了 UP 和 DOWN 的数值带宽数值以后，Hysteria 会通过计算丢包率来提升速度进行补偿*
 
 
 方法一
@@ -144,7 +144,8 @@ Tips:部分厂商VPS如搭建完Hysteria2无法正常启动，请执行如下命
 ```
 chmod +rw /root/private.key
 ```
-#Hysteria 2 的伪装验证
+#Hysteria 2 的伪装验证  
+
 进入 Chrome.exe 目标地址（路径），开启 Hysteria2 代理，Windows 打开 TUN 模式，cmd 命令如下：
 ```
 chrome --origin-to-force-quic-on=你的域名:443
