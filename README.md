@@ -150,7 +150,7 @@ Windows 命令提示符进入 Chrome.exe 目标地址（cd+路径），开启 Hy
 ```
 chrome --origin-to-force-quic-on=你的域名:443
 ```
-*访问 https://你的域名 ,若是按照上述搭建的话，会跳转到 bing.com 的网页*
+访问 https://你的域名 ,若是按照上述搭建的话，会跳转到 bing.com 的网页
 
 ## Debian系统命令放行端口
 - 安装iptables（通常系统都会自带，如果没有就需要安装）
