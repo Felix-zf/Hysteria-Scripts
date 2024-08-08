@@ -140,7 +140,7 @@ systemctl status hysteria-server.service
 ```
 journalctl -u hysteria-server.service
 ```
-Tips:部分厂商VPS如搭建完Hysteria2无法正常启动，请执行如下命令添加私钥的读写权限，完成之后执行重启Hysteria2命令，再执行查看Hysteria2状态命令，如果启动成功即可！
+*Tips: 部分厂商VPS如搭建完Hysteria2无法正常启动，请执行如下命令添加私钥的读写权限，完成之后执行重启Hysteria2命令，再执行查看Hysteria2状态命令，如果启动成功即可！*
 ```
 chmod +rw /root/private.key
 ```
