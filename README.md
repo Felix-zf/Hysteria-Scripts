@@ -1,7 +1,7 @@
 # Heysteria-install
 
-- Offical Blog: https://v2.hysteria.network
 - Project Heysteria：https://github.com/apernet/hysteria
+- Offical Blog: https://v2.hysteria.network
 
 ## 服务端部署步骤 
 - 更新 VPS 系统安装所需组件
@@ -103,6 +103,9 @@ socks5:
 http:
   listen: 127.0.0.1:8080
 ```
+
+*tips:若是网络拥挤，丢包率高，我们在填入了 UP 和 DOWN 的数值带宽数值以后，Hysteria 会通过计算丢包率来提升速度进行补偿*
+
 
 方法一
 - 首先在此：https://github.com/apernet/hysteria/releases/ 下载客户端,解压至v2rayN的bin/hysteria目录中.
