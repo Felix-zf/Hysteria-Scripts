@@ -45,7 +45,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heyste
 
 - 下载服务端文件: sz+相应文件路径
 
-## 证书申请
+## SSL证书申请
 - 若有域名，acme.sh 证书一键生成
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
