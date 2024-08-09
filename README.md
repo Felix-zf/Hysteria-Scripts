@@ -1,4 +1,4 @@
-# Heysteria-install
+# 基于sing-box内核的Heysteria安装
 
 - Project Heysteria：https://github.com/apernet/hysteria
 - Offical Blog: https://v2.hysteria.network
