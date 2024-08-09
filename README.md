@@ -37,11 +37,11 @@ bash <(curl -fsSL https://get.hy2.sh/) --remove
 
 #hysteria 2
 ```
-wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-Scripts/main/hy2/hysteria.sh && bash hysteria.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hy2/hysteria.sh && bash hysteria.sh
 ```
 #hysteria 1
 ```
-wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Heysteria-Scripts/main/hy1/hysteria.sh && bash hysteria.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hy1/hysteria.sh && bash hysteria.sh
 ```
 
 - 下载服务端文件: sz+相应文件路径
