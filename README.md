@@ -1,7 +1,8 @@
 # 基于sing-box内核的Heysteria安装
 
 - Project Heysteria：https://github.com/apernet/hysteria
-- Offical Blog: https://v2.hysteria.network
+- Sing-box Offical Blog: https://sing-box.sagernet.org/zh/
+- Hysteria Offical Blog: https://v2.hysteria.network
 
 ## 服务端部署步骤 
 - 更新 VPS 系统安装所需组件
