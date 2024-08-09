@@ -84,7 +84,8 @@ masquerade:
     rewriteHost: true
 ```
 
-## 客户端配置  
+## 客户端配置 
+### Windows 推荐使用 V2rayN
 *请看清楚配置文件中的注释，修改 ip , auth（VPS 服务端 上面配置的密码） ， bandwidth ， sni ， insecure 等参数*
 ```
 server: ip:443
@@ -106,7 +107,6 @@ http:
 
 *Tips: 若是网络拥挤，丢包率高，我们在填入了 UP 和 DOWN 的数值带宽数值以后，Hysteria 会通过计算丢包率来提升速度进行补偿*
 
-
 方法一
 - 首先在此：https://github.com/apernet/hysteria/releases/ 下载客户端,解压至v2rayN的bin/hysteria目录中.
 - 打开 v2rayN，依次点击“服务器”→“添加自定义服务器”,输入别名、导入脚本生成的文件，Core类型选择hysteria，Socks端口输入xxxx.
@@ -114,6 +114,104 @@ http:
 方法二  
 - 新建heysteria2服务器，填入地址端口密码，开启跳过证书验证
 
+### Android / IOS / MacOS 推荐使用 sing-box
+sing-box 配置文件
+```
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "cf",
+        "address": "https://1.1.1.1/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      },
+      {
+        "tag": "block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "geosite": "category-ads-all",
+        "server": "block",
+        "disable_cache": true
+      },
+      {
+        "outbound": "any",
+        "server": "local"
+      },
+      {
+        "geosite": "cn",
+        "server": "local"
+      }
+    ],
+    "strategy": "ipv4_only"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "inet4_address": "172.19.0.1/30",
+      "auto_route": true,
+      "strict_route": false,
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "proxy",
+      "server": "ip",             // VPS ip
+      "server_port": 443,
+      "up_mbps": 50,              //上传速率，实际填写，过大会导致流量浪费
+      "down_mbps": 200,           //下载速率，实际填写，过大会导致流量浪费
+      "password": "**********",   //hysteria2 服务密码
+      "tls": {
+        "enabled": true,
+        "server_name": "cn2.bozai.us",    //若域名搭建，请填写域名，若IP搭建，请填写 bing.com
+        "insecure": false                 //若域名搭建，请填写 false，若IP搭建，请填写 true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "geosite": "cn",
+        "geoip": [
+          "private",
+          "cn"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geosite": "category-ads-all",
+        "outbound": "block"
+      }
+    ],
+    "auto_detect_interface": true
+  }
+}
+```
+*请看清楚以下配置文件中的注释，请根据自己的需要，自行更改。*
 
 ## Hysteria2相关命令
 #启动Hysteria2
