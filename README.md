@@ -154,7 +154,7 @@ sing-box 配置文件
   "inbounds": [
     {
       "type": "tun",
-      "inet4_address": "172.19.0.1/30",
+      "inet4_address": "198.18.0.1/16",
       "auto_route": true,
       "strict_route": false,
       "sniff": true
