@@ -3,7 +3,7 @@
 - Project Heysteria：https://github.com/apernet/hysteria
 - Hysteria Offical Blog: https://v2.hysteria.network
 
-## 服务端部署步骤 
+## 服务端部署
 - 更新 VPS 系统安装所需组件
 
 #Debian命令
