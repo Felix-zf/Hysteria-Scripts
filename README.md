@@ -1,7 +1,6 @@
 # Hysteria协议安装
 
 - Project Heysteria：https://github.com/apernet/hysteria
-- Sing-box Offical Blog: https://sing-box.sagernet.org/zh
 - Hysteria Offical Blog: https://v2.hysteria.network
 
 ## 服务端部署步骤 
