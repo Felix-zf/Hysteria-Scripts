@@ -1,4 +1,4 @@
-# 基于sing-box内核的Heysteria安装
+# Sing-box内核的Heysteria协议安装
 
 - Project Heysteria：https://github.com/apernet/hysteria
 - Sing-box Offical Blog: https://sing-box.sagernet.org/zh
