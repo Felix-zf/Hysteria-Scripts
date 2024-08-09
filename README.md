@@ -282,4 +282,5 @@ netfilter-persistent reload
 
 ## 鸣谢
 - Misaka-blog的heysteria项目：https://github.com/Misaka-blog/hysteria-install  
-- 油管up主波仔分享的博文教学：https://v2rayssr.com/hysteria2.html
+- 油管up主波仔分享的blog教学：https://v2rayssr.com/hysteria2.html
+- 米开朗基杨sing-box的配置方法blog: https://icloudnative.io/posts/sing-box-tutorial/#android 
