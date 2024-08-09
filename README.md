@@ -85,7 +85,7 @@ masquerade:
 ```
 
 ## 客户端配置 
-### Windows 推荐使用 V2rayN
+### Windows 推荐使用 V2rayN / Hiddfy Next
 *请看清楚配置文件中的注释，修改 ip , auth（VPS 服务端 上面配置的密码） ， bandwidth ， sni ， insecure 等参数*
 ```
 server: ip:443
@@ -114,7 +114,7 @@ http:
 方法二  
 - 新建heysteria2服务器，填入地址端口密码，开启跳过证书验证
 
-### Android / IOS / MacOS 推荐使用 sing-box
+### Android / IOS / MacOS 配置
 sing-box 配置文件
 ```
 {
