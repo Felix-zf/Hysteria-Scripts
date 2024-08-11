@@ -171,7 +171,7 @@ sing-box 配置文件
       "password": "**********",   //hysteria2 服务密码
       "tls": {
         "enabled": true,
-        "server_name": "https://bing.com",    //若域名搭建，请填写域名，若IP搭建，请填写 bing.com
+        "server_name": "cn2.bozai.us",    //若域名搭建，请填写域名，若IP搭建，请填写 bing.com
         "insecure": false                 //若域名搭建，请填写 false，若IP搭建，请填写 true
       }
     },
