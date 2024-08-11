@@ -281,7 +281,8 @@ netfilter-persistent reload
 设置完成后指定端口就会持续放行了
 
 ## 鸣谢
-- Misaka-blog的heysteria项目：https://github.com/Misaka-blog/hysteria-install  
 - 油管up主波仔分享的blog教学：https://v2rayssr.com/hysteria2.html
+- Misaka-blog的heysteria项目：https://github.com/Misaka-blog/hysteria-install  
+
 
 
