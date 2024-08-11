@@ -46,7 +46,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Hyster
 - 下载服务端文件: sz+相应文件路径
 
 ## SSL证书申请
-- 若有域名，直接填入，通过acme.sh 证书自动生成；也可以使用以下脚本手动申请。
+- 若有域名，通过acme.sh 自动生成
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
 ```
