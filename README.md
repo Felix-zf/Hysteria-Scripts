@@ -164,7 +164,7 @@ sing-box 配置文件
     {
       "type": "hysteria2",
       "tag": "proxy",
-      "server": "ip",             // VPS IP地址
+      "server": "ip",             // 服务器 IP地址
       "server_port": 443,
       "up_mbps": 30,              //上传速率，实际填写，过大会导致流量浪费
       "down_mbps": 90,           //下载速率，实际填写，过大会导致流量浪费
