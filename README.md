@@ -46,11 +46,11 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Hyster
 - 下载服务端文件: sz+相应文件路径
 
 ## SSL证书申请
-- 若有域名，通过acme.sh 自动生成
+- acme.sh 一键脚本
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
 ```
-- 若无域名，生成自签证书
+- 自签证书
 ```
 openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
 ```
