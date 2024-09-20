@@ -50,7 +50,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Hyster
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
 ```
-- 自签证书
+- bing 自签证书
 ```
 openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
 ```
