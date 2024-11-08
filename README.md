@@ -32,15 +32,19 @@ bash <(curl -fsSL https://get.hy2.sh/)
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
 
-- Hysteria 一键安装脚本
+- Hysteria2命令
 
-#hysteria 2
+#启动hy2
 ```
-wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hy2/hysteria.sh && bash hysteria.sh
+systemctl start hysteria-server.service
 ```
-#hysteria 1
+#开机启动
 ```
-wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hy1/hysteria.sh && bash hysteria.sh
+systemctl enable hysteria-server.service
+```
+#重新启动
+```
+systemctl restart hysteria-server.service
 ```
 
 - 下载服务端文件: sz+相应文件路径
