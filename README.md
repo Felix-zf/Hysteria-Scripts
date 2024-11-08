@@ -50,11 +50,11 @@ systemctl restart hysteria-server.service
 - 下载服务端文件: sz+相应文件路径
 
 ## SSL证书申请
-- acme.sh 一键脚本
+- acme.sh 手动安装
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
 ```
-- bing 自签证书
+- bing 一键自签脚本
 ```
 openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
 ```
