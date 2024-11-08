@@ -38,7 +38,7 @@ bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
 systemctl start hysteria-server.service
 ```
-#开机启动
+#开机自启
 ```
 systemctl enable hysteria-server.service
 ```
