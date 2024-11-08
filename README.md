@@ -21,7 +21,7 @@ yum update -y
 yum install curl sudo -y
 ```
 
-- Hysteria 官方的一键安装脚本
+- Hysteria 官方脚本
 
 #安装或升级到最新版本 Hysteria 2
 ```
@@ -46,8 +46,6 @@ systemctl enable hysteria-server.service
 ```
 systemctl restart hysteria-server.service
 ```
-
-- 下载服务端文件: sz+相应文件路径
 
 ## SSL证书申请
 - acme.sh 手动安装
