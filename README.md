@@ -252,6 +252,20 @@ chrome --origin-to-force-quic-on=你的域名:443
 ```
 访问 https://你的域名 ,若是按照上述搭建的话，会跳转到 bing.com 的网页
 
+## 端口跳跃
+- 在基于Ubuntu和基于Debian的Linux发行版上，运行以下命令来安装ifconfig：
+```
+sudo apt install net-tools -y
+```
+- 用`ifconfig`命令查看网卡名称，默认一般是eth0。然后在终端里输入这条命令：
+```
+# IPv4
+iptables -t nat -A PREROUTING -i eth0 -p udp --dport 20000:50000 -j REDIRECT --to-ports 443
+# IPv6
+ip6tables -t nat -A PREROUTING -i eth0 -p udp --dport 20000:50000 -j REDIRECT --to-ports 443
+```
+在这个示例中，服务器监听 443 端口，但客户端可以通过 20000-50000 范围内的任何端口连接。
+
 ## Debian系统命令放行端口
 - 安装iptables（通常系统都会自带，如果没有就需要安装）
 ```
