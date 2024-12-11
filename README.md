@@ -99,8 +99,8 @@ auth: ****
 #  down: 90 mbps
   
 tls:
-  sni: cn2.bozai.us  # 若无域名，请改为 bing.com
-  insecure: false    # 若无域名，需要改参数为 true
+  sni: www.bing.com  # 若无域名，请改为 bing.com
+  insecure: true    # 若无域名，需要改参数为 true
  
 socks5:
   listen: 127.0.0.1:1080
