@@ -6,14 +6,14 @@
 ## 服务端部署
 - 更新 VPS 系统安装所需组件
 
-#Debian命令
+Debian命令
 ```
 apt update -y
 ```
 ```
 apt install curl sudo -y
 ```
-#CenOS命令
+CenOS命令
 ```
 yum update -y
 ```
@@ -23,30 +23,30 @@ yum install curl sudo -y
 
 - Hysteria 官方脚本
 
-#安装或升级到最新版本 Hysteria 2
+安装或升级到最新版本 Hysteria 2
 ```
 bash <(curl -fsSL https://get.hy2.sh/)
 ```
-#移除 Hysteria 2
+移除 Hysteria 2
 ```
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
 
 - Hysteria2 开机自启
 
-#启动hy2
+启动hy2
 ```
 systemctl start hysteria-server.service
 ```
-#开机自启
+开机自启
 ```
 systemctl enable hysteria-server.service
 ```
-#重启Hysteria2
+重启Hysteria2
 ```
 systemctl restart hysteria-server.service
 ```
-#查看Hysteria2状态
+查看Hysteria2状态
 ```
 systemctl status hysteria-server.service
 ```
