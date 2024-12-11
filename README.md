@@ -32,7 +32,7 @@ bash <(curl -fsSL https://get.hy2.sh/)
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
 
-- Hysteria2命令
+- Hysteria2 开机自启
 
 #启动hy2
 ```
