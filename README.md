@@ -42,10 +42,6 @@ systemctl start hysteria-server.service
 ```
 systemctl enable hysteria-server.service
 ```
-#重新启动
-```
-systemctl restart hysteria-server.service
-```
 
 ## SSL证书申请
 - acme.sh 手动安装
