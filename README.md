@@ -42,6 +42,14 @@ systemctl start hysteria-server.service
 ```
 systemctl enable hysteria-server.service
 ```
+#重启Hysteria2
+```
+systemctl restart hysteria-server.service
+```
+#查看Hysteria2状态
+```
+systemctl status hysteria-server.service
+```
 
 ## SSL证书申请
 - acme.sh 手动安装
@@ -53,7 +61,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-S
 openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
 ```
 
-## 服务端配置文件
+## 服务端配置
 *服务端的配置要和客户端状态一致，也就是说，服务端配置的是无域名的配置，客户端也必须选择无域名的配置参数，必须一致，反之一样，服务端配置的是有域名的，那稍后客户端也必须选择有域名的参数。  
 项目位置：/etc/hysteria/config.yaml*
 ```
