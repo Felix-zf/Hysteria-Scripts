@@ -67,14 +67,14 @@ listen: :443
 # 有域名部署的选择 acme ，无域名的选择 tls
 # 选择 acme，必须注释掉 tls，反之一样
  
-acme:
-  domains:
-    - cn2.bozai.us        # 域名
-  email: yourself@email.com   # 邮箱，格式正确即可
+#acme:
+#  domains:
+#    - cn2.bozai.us        # 域名
+#  email: yourself@email.com   # 邮箱，格式正确即可
  
-#tls:
-#  cert: /etc/hysteria/server.crt
-#  key: /etc/hysteria/server.key
+tls:
+  cert: /etc/hysteria/server.crt
+  key: /etc/hysteria/server.key
  
 auth:
   type: password
