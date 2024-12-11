@@ -58,7 +58,7 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout 
 ```
 
 ## 服务端配置文件
-*服务端的配置要和客户端状态一致，也就是说，服务端配置的是无域名的配置，客户端也必须选择无域名的配置参数，必须一致，反之一样，服务端配置的是有域名的，那稍后客户端也必须选择有域名的参数*
+*服务端的配置要和客户端状态一致，也就是说，服务端配置的是无域名的配置，客户端也必须选择无域名的配置参数，必须一致，反之一样，服务端配置的是有域名的，那稍后客户端也必须选择有域名的参数。项目位置：/etc/hysteria/config.yaml*
 ```
 listen: :443
  
@@ -173,8 +173,8 @@ sing-box 配置文件
       "password": "**********",   //hysteria2 服务密码
       "tls": {
         "enabled": true,
-        "server_name": "cn2.bozai.us",    //若域名搭建，请填写域名，若IP搭建，请填写 bing.com
-        "insecure": false                 //若域名搭建，请填写 false，若IP搭建，请填写 true
+        "server_name": "www.bing.com",    //若域名搭建，请填写域名，若IP搭建，请填写 bing.com
+        "insecure": true                 //若域名搭建，请填写 false，若IP搭建，请填写 true
       }
     },
     {
