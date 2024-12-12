@@ -32,7 +32,16 @@ bash <(curl -fsSL https://get.hy2.sh/)
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
 
-- Hysteria2 开机自启
+## SSL证书申请
+- bing 一键自签脚本
+```
+openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
+```
+- acme.sh 手动安装
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
+```
+## Hysteria2 相关命令
 
 启动hy2
 ```
@@ -49,16 +58,6 @@ systemctl restart hysteria-server.service
 查看Hysteria2状态
 ```
 systemctl status hysteria-server.service
-```
-
-## SSL证书申请
-- bing 一键自签脚本
-```
-openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/server.key -out /etc/hysteria/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
-```
-- acme.sh 手动安装
-```
-wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
 ```
 
 ## 服务端配置
