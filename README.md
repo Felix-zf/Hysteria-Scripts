@@ -6,12 +6,12 @@
 ## 服务端部署
 - 更新系统
 
-Debian命令
+Debian 命令
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 
-- 安装Hysteria
+- 安装 Hysteria
 
 安装或升级到最新版本 Hysteria 2
 ```
