@@ -8,8 +8,7 @@
 
 Debian命令
 ```
-apt update -y
-apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 ```
 
 - Hysteria 官方脚本
