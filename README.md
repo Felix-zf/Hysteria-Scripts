@@ -17,7 +17,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 bash <(curl -fsSL https://get.hy2.sh/)
 ```
-移除 Hysteria 2
+- 移除 Hysteria 
 ```
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 ```
