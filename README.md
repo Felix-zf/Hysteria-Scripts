@@ -31,7 +31,7 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout 
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
 ```
-## Hysteria2 相关命令
+***Hysteria2 启动命令***
 
 启动hy2
 ```
