@@ -9,16 +9,11 @@
 Debian命令
 ```
 apt update -y
+apt upgrade -y
 ```
+安装cURL
 ```
 apt install curl sudo -y
-```
-CenOS命令
-```
-yum update -y
-```
-```             
-yum install curl sudo -y
 ```
 
 - Hysteria 官方脚本
