@@ -11,7 +11,7 @@ Debian命令
 sudo apt update && sudo apt upgrade -y
 ```
 
-- Hysteria 官方脚本
+- 安装Hysteria
 
 安装或升级到最新版本 Hysteria 2
 ```
