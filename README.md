@@ -4,7 +4,7 @@
 - Hysteria Offical Blog: https://v2.hysteria.network
 
 ## 服务端部署
-- 更新 VPS 系统安装所需组件
+- 更新系统
 
 Debian命令
 ```
