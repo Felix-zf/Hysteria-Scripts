@@ -12,7 +12,10 @@ sudo apt update && sudo apt upgrade -y
 ```
 
 - 安装 Hysteria
-
+AUTO SCRIPT
+```
+bash <(curl -fsSL https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hysteria.sh)
+```
 安装或升级到最新版本 Hysteria 2
 ```
 bash <(curl -fsSL https://get.hy2.sh/)
