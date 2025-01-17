@@ -23,11 +23,6 @@ AUTO Script
 bash <(curl -fsSL https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hysteria.sh)
 ```
 
-- 移除 Hysteria 
-```
-bash <(curl -fsSL https://get.hy2.sh/) --remove
-```
-
 ## SSL证书申请
 - bing 一键自签脚本
 ```
