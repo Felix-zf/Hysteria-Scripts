@@ -13,14 +13,14 @@ sudo apt update && sudo apt upgrade -y
 
 - 安装 Hysteria
 
-Official Script 
-```
-bash <(curl -fsSL https://get.hy2.sh/)
-```
-
 AUTO Script
 ```
 bash <(curl -fsSL https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hysteria.sh)
+```
+
+Official Script 
+```
+bash <(curl -fsSL https://get.hy2.sh/)
 ```
 
 ## SSL证书申请
@@ -32,6 +32,7 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout 
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
 ```
+
 ***Hysteria2 启动命令***
 
 启动hy2
@@ -41,14 +42,6 @@ systemctl start hysteria-server.service
 开机自启
 ```
 systemctl enable hysteria-server.service
-```
-重启Hysteria2
-```
-systemctl restart hysteria-server.service
-```
-查看Hysteria2状态
-```
-systemctl status hysteria-server.service
 ```
 
 ## 服务端配置
@@ -85,6 +78,18 @@ masquerade:
     url: https://addons.mozilla.org # 伪装网站
     rewriteHost: true
 ```
+
+***Hysteria2 重啓命令***
+
+重启Hysteria2
+```
+systemctl restart hysteria-server.service
+```
+查看Hysteria2状态
+```
+systemctl status hysteria-server.service
+```
+
 
 ## 客户端配置 
 ### Windows 推荐使用 V2rayN / Hiddfy Next
