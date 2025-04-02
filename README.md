@@ -85,7 +85,7 @@ masquerade:
 ```
 systemctl restart hysteria-server.service
 ```
-查看Hysteria2状态，q退出
+查看状态，q退出
 ```
 systemctl status hysteria-server.service
 ```
