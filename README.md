@@ -75,7 +75,7 @@ auth:
 masquerade:
   type: proxy
   proxy:
-    url: https://addons.mozilla.org # 伪装网站
+    url: https://www.bing.com # 伪装网站
     rewriteHost: true
 ```
 
