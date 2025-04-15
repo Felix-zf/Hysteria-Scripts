@@ -53,29 +53,46 @@ vi /etc/hysteria/config.yaml
 ```
 - 配置文件内容
 ```
-listen: :443
- 
-# 以下 acme 和 tls 字段，二选一
-# 有域名部署的选择 acme ，无域名的选择 tls
-# 选择 acme，必须注释掉 tls，反之一样
- 
+listen: :443 #默认端口443，可以修改为其他端口
+
+#使用CA证书
 #acme:
 #  domains:
-#    - cn2.bozai.us        # 域名
-#  email: yourself@email.com   # 邮箱，格式正确即可
- 
+#    - your.domain.net #已经解析到服务器的域名
+#  email: your@email.com #你的邮箱
+
+#使用自签证书
 tls:
-  cert: /etc/hysteria/server.crt
-  key: /etc/hysteria/server.key
- 
+  cert: /etc/hysteria/server.crt 
+  key: /etc/hysteria/server.key 
+
 auth:
   type: password
-  password: 88888888   # 请及时更改密码
- 
+  password: 123456 #认证密码，使用一个强密码进行替换
+
+resolver:
+  type: udp
+  tcp:
+    addr: 8.8.8.8:53 
+    timeout: 4s 
+  udp:
+    addr: 8.8.4.4:53 
+    timeout: 4s
+  tls:
+    addr: 1.1.1.1:853 
+    timeout: 10s
+    sni: cloudflare-dns.com 
+    insecure: false 
+  https:
+    addr: 1.1.1.1:443 
+    timeout: 10s
+    sni: cloudflare-dns.com
+    insecure: false
+
 masquerade:
   type: proxy
   proxy:
-    url: https://www.bing.com # 伪装网站
+    url: https://cn.bing.com/ #伪装网址
     rewriteHost: true
 ```
 
