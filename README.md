@@ -62,9 +62,9 @@ listen: :443 #默认端口443，可以修改为其他端口
 #  email: your@email.com #你的邮箱
 
 #使用自签证书
-tls:
-  cert: /etc/hysteria/server.crt 
-  key: /etc/hysteria/server.key 
+#tls:
+#  cert: /etc/hysteria/server.crt 
+#  key: /etc/hysteria/server.key 
 
 auth:
   type: password
