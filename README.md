@@ -96,6 +96,8 @@ masquerade:
     rewriteHost: true
 ```
 
+Tips: 伪装网址推荐使用个人网盘的网址，个人网盘比较符合单节点大流量的特征，可以通过谷歌搜索 intext:登录 cloudreve 来查找别人搭建好的网盘网址
+
 ***Hysteria2 重啓命令***
 
 重启Hysteria2
@@ -266,6 +268,7 @@ ufw allow http && ufw allow https
 
 **性能优化**
 
+将发送、接收的两个缓冲区都设置为 16 MB：
 ```
 sysctl -w net.core.rmem_max=16777216
 sysctl -w net.core.wmem_max=16777216
