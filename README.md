@@ -195,8 +195,8 @@ sing-box 配置文件
       "password": "**********",   //hysteria2 服务密码
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",    //若域名搭建，请填写域名，若無域名，请填写 bing.com
-        "insecure": true                 //若域名搭建，请填写 false，若無域名，请填写 true
+        "server_name": "www.bing.com",    //若域名搭建，请填写域名; 若无域名，请填写 bing.com
+        "insecure": true                 //若域名搭建，请填写 false; 若无域名，请填写 true
       }
     },
     {
@@ -236,6 +236,32 @@ sing-box 配置文件
 }
 ```
 *请看清楚以上配置文件中的注释，根据自己的需要，自行更改。*
+
+如果显示：{"error": "invalid config: tls: open /etc/hysteria/server.crt: permission denied"} 或者 failed to load server conf 的错误，则说明 Hysteria 没有访问证书文件的权限，需要执行下面的命令将 Hysteria 切换到 root 用户运行
+```
+sed -i '/User=/d' /etc/systemd/system/hysteria-server.service
+sed -i '/User=/d' /etc/systemd/system/hysteria-server@.service
+systemctl daemon-reload
+systemctl restart hysteria-server.service
+```
+
+**UFW 防火墙**
+
+查看防火墙状态
+```
+ufw status
+```
+开放 80 和 443 端口
+```
+ufw allow http && ufw allow https
+```
+
+**性能优化**
+
+```
+sysctl -w net.core.rmem_max=16777216
+sysctl -w net.core.wmem_max=16777216
+```
 
 ## Hysteria2相关命令
 #启动Hysteria2
