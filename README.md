@@ -142,11 +142,16 @@ http:
 sing-box 配置文件
 ```
 {
+  "log": {
+    "disabled": false,
+    "level": "error"
+  },
   "dns": {
     "servers": [
       {
-        "tag": "cf",
-        "address": "https://1.1.1.1/dns-query"
+        "tag": "cloudflare",
+        "address": "https://1.1.1.1/dns-query",
+		"detour": "proxy"
       },
       {
         "tag": "local",
@@ -159,26 +164,29 @@ sing-box 配置文件
       }
     ],
     "rules": [
-      {
-        "geosite": "category-ads-all",
-        "server": "block",
-        "disable_cache": true
-      },
-      {
-        "outbound": "any",
-        "server": "local"
-      },
-      {
-        "geosite": "cn",
-        "server": "local"
-      }
+		{
+		  "geosite": [
+			"cn"
+		  ],
+		  "server": "local",
+		  "disable_cache": true
+		},
+		{
+		  "geosite": [
+			"category-ads-all"
+		  ],
+		  "server": "block",
+		  "disable_cache": true
+		}
     ],
     "strategy": "ipv4_only"
   },
   "inbounds": [
     {
       "type": "tun",
-      "inet4_address": "198.18.0.1/16",
+	  "tag": "tun-in",
+      "inet4_address": "172.19.0.1/30",
+	  "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
       "strict_route": false,
       "sniff": true
@@ -188,15 +196,15 @@ sing-box 配置文件
     {
       "type": "hysteria2",
       "tag": "proxy",
-      "server": "ip",             //服务器 IP地址
-      "server_port": 443,
-      "up_mbps": 30,              //上传速率，实际填写，过大会导致流量浪费
-      "down_mbps": 90,           //下载速率，实际填写，过大会导致流量浪费
-      "password": "**********",   //hysteria2 服务密码
+      "server": "111.111.111.111", #服务器地址
+      "server_port": 443, #服务器端口
+      "up_mbps": 20, #最大上传速率
+      "down_mbps": 50, #最大下载速率
+      "password": "123456", #密码和服务端一致
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",    //若域名搭建，请填写域名; 若无域名，请填写 bing.com
-        "insecure": true                 //若域名搭建，请填写 false; 若无域名，请填写 true
+        "server_name": "your.domain.net", #没有域名的填伪装网址
+        "insecure": false #使用自签证书需要改成true
       }
     },
     {
