@@ -13,14 +13,14 @@ sudo apt update && sudo apt upgrade -y
 
 - 安装 Hysteria
 
-AUTO Script
-```
-bash <(curl -fsSL https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hysteria.sh)
-```
-
 Official Script 
 ```
 bash <(curl -fsSL https://get.hy2.sh/)
+```
+
+AUTO Script
+```
+bash <(curl -fsSL https://raw.githubusercontent.com/Felix-zf/Hysteria-Scripts/main/hysteria.sh)
 ```
 
 ## SSL证书申请
