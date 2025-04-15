@@ -33,7 +33,7 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout 
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/ACME-Scripts/main/acme.sh && bash acme.sh
 ```
 
-***Hysteria2 启动命令***
+***Hysteria2 启动***
 
 启动hy2
 ```
@@ -101,7 +101,7 @@ masquerade:
 
 2. 服务端的配置要和客户端状态一致，也就是说，服务端配置的是无域名的配置，客户端也必须选择无域名的配置参数，必须一致，反之一样，服务端配置的是有域名的，那稍后客户端也必须选择有域名的参数
 
-***Hysteria2 重啓命令***
+***Hysteria2 重啓***
 
 重启Hysteria2
 ```
@@ -111,7 +111,6 @@ systemctl restart hysteria-server.service
 ```
 systemctl status hysteria-server.service
 ```
-
 
 ## 客户端配置 
 
