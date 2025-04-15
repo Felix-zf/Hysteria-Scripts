@@ -111,37 +111,8 @@ systemctl status hysteria-server.service
 
 
 ## 客户端配置 
-### Windows 推荐使用 V2rayN / Hiddfy Next
-*请看清楚配置文件中的注释，修改 ip , auth（VPS 服务端 上面配置的密码） ， bandwidth ， sni ， insecure 等参数*
-```
-server: ip:443
-auth: ****
- 
-#bandwidth:
-#  up: 30 mbps
-#  down: 90 mbps
-  
-tls:
-  sni: www.bing.com  # 若无域名，请改为 bing.com
-  insecure: true    # 若无域名，需要改参数为 true
- 
-socks5:
-  listen: 127.0.0.1:1080
-http:
-  listen: 127.0.0.1:8080
-```
 
-*Tips: 若是网络拥挤，丢包率高，我们在填入了 UP 和 DOWN 的数值带宽数值以后，Hysteria 会通过计算丢包率来提升速度进行补偿*
-
-方法一
-- 首先在此：https://github.com/apernet/hysteria/releases/ 下载客户端,解压至v2rayN的bin/hysteria目录中.
-- 打开 v2rayN，依次点击“服务器”→“添加自定义服务器”,输入别名、导入脚本生成的文件，Core类型选择hysteria，Socks端口输入xxxx.
-
-方法二  
-- 新建heysteria2服务器，填入地址端口密码，开启跳过证书验证
-
-### Android / IOS / MacOS 配置
-sing-box 配置文件
+**sing-box 配置文件**
 ```
 {
   "log": {
