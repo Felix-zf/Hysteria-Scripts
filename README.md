@@ -6,13 +6,17 @@
 ## 服务端部署
 - 更新系统
 
-Debian 命令
+Debian
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 
 - 安装 Hysteria
 
+切换到 root
+```
+sudo -i
+```
 Official Script 
 ```
 bash <(curl -fsSL https://get.hy2.sh/)
