@@ -335,6 +335,7 @@ netfilter-persistent reload
 ## 鸣谢
 - 油管up主波仔分享的blog教学：https://v2rayssr.com/hysteria2.html
 - Play实验室的heysteria项目：https://playlab.eu.org/archives/hysteria2
+- deathline94'PJ: https://github.com/deathline94/Hysteria2-Installer
 
 
 
